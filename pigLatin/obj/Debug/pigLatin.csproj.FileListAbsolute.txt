@@ -1,0 +1,6 @@
+c:\users\user\documents\visual studio 2015\Projects\pigLatin\pigLatin\bin\Debug\pigLatin.exe.config
+C:\Users\User\Documents\Visual Studio 2015\Projects\pigLatin\pigLatin\bin\Debug\pigLatin.exe
+C:\Users\User\Documents\Visual Studio 2015\Projects\pigLatin\pigLatin\bin\Debug\pigLatin.pdb
+C:\Users\User\Documents\Visual Studio 2015\Projects\pigLatin\pigLatin\obj\Debug\pigLatin.csprojResolveAssemblyReference.cache
+C:\Users\User\Documents\Visual Studio 2015\Projects\pigLatin\pigLatin\obj\Debug\pigLatin.exe
+C:\Users\User\Documents\Visual Studio 2015\Projects\pigLatin\pigLatin\obj\Debug\pigLatin.pdb
