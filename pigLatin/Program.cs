@@ -10,13 +10,34 @@ namespace pigLatin
     {
         static void Main(string[] args)
         {
-            Console.WriteLine("Welcome to the Pig Latin Translator!"); //welcome message
+            Boolean agree = true;
+            while (agree)
+            {
 
-            Console.WriteLine("Please Enter a line to be translated");// Gets users input
-            string userSentence = Console.ReadLine();// Reads user's input
-            Console.WriteLine(userSentence.ToLower());//convert user input to Lower case  
-            string transPiLatin = pigLatinTraslate(userSentence);
-            Console.WriteLine(transPiLatin);
+                Console.WriteLine("Welcome to the Pig Latin Translator!"); //welcome message
+
+                Console.WriteLine("Please Enter a line to be translated");// Gets users input
+                string userSentence = Console.ReadLine();// Reads user's input
+                Console.WriteLine(userSentence.ToLower());//convert user input to Lower case  
+                string transPiLatin = pigLatinTraslate(userSentence);
+                Console.WriteLine(transPiLatin);
+                Console.WriteLine("Translate another Line? (y/n)");// validates more input sentence from the user
+                string userRes = Console.ReadLine();
+                if (userRes == "Y" || userRes == "y")
+                {
+                    agree = true;
+
+                }
+                else
+                {
+
+                    agree = false;
+                    break;
+                }
+
+            }
+
+
         }
 
         static int findIndexOfVowel(string input)
@@ -24,7 +45,7 @@ namespace pigLatin
             char[] vowel = { 'a', 'e', 'i', '0', 'u' };
 
             return input.IndexOfAny(vowel);
-            
+
 
         }
         static string pigLatinTraslate(string userSentence)
@@ -41,7 +62,7 @@ namespace pigLatin
                                                                        //string in index 0 if it starts with a consonant,
                                                                        //and iterate through the last characher of the string lenght which will be at Length - 1.
                 int currPosition = vowel.IndexOf(firstLett);//Returns the zero-based index of the first character of the vowel string word.
-               // Console.WriteLine(currPosition);
+                                                            // Console.WriteLine(currPosition);
 
                 int index = findIndexOfVowel(wrd);
                 // vowel is found at 0
@@ -49,7 +70,7 @@ namespace pigLatin
                 {
 
                     pigLatWrds.Add(wrd + "way"); //if vowel is found at position 0, add "way" to the end
-                   
+
                 }
 
                 else
@@ -64,13 +85,12 @@ namespace pigLatin
             }
             return string.Join(" ", pigLatWrds);//returns the new string
 
-
         }
 
     }
 
 }
-    
 
-    
+
+
 
