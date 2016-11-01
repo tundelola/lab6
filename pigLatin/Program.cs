@@ -76,9 +76,9 @@ namespace pigLatin
                 else
                 {
 
-                    string aft = wrd.Substring(index);//gets character from the first vowel to the end
-                    string cr = wrd.Remove(index);//remove the consonant character before the first vowel
-                    string all = aft + cr + "ay";//combine all the new string after the first vowel
+                    string  firstIndex = wrd.Substring(index);//gets character from the first vowel to the end
+                    string otherIndex = wrd.Remove(index);//remove the consonant character before the first vowel
+                    string all = firstIndex + otherIndex + "ay";//combine all the new string after the first vowel
                     pigLatWrds.Add(all);// add the new string to my list
                 }
 
